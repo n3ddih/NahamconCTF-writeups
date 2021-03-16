@@ -156,9 +156,9 @@ c
 ```
 
 ## Typewriter
+File: [<ins>typewriter.zip</ins>](https://drive.google.com/file/d/1aYkNCZmN3uj1UDrHDVeGvvw5yuQer0kd/view?usp=sharing)
 
 Description:
-
 ```
 A CONSTELLATIONS employee had his machine crash and he lost all his work. Thankfully IT managed to get a memory dump. Can you recover his work? 
 ```
