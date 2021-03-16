@@ -4,9 +4,9 @@ Writeups for *warmups* category 🥵
 ## Veebee
 File: [<ins>veebee.vbe</ins>](./files/veebee.vbe)
 
-If you use window just run the program 🤔
+If you use window just run the program and a few *okay* 🤔
 
-![image](https://user-images.githubusercontent.com/80664686/111112180-4ab49480-8592-11eb-945f-53de84f53ef0.png)
+![image](https://user-images.githubusercontent.com/80664686/111302652-3fdb2c00-8686-11eb-9530-97af5b8611db.png)
 >I don't know how to run it on Linux though 😞
 
 ## Chicken Wings
