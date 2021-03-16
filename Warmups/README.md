@@ -136,3 +136,29 @@ esab is the reverse string of base so this challange is about *base64* and *reve
 $ cat esab64 | rev | base64 -d | rev
 flag{fb5211b498afe87b1bd0db601117e16e}_
 ```
+> The `rev` command is to revese a string, `base64 -d` is to decode a base64 encoded string </br>
+> If you have trouble just go through every '|' to have a better grasp
+
+## Eight Circle
+File: [<ins>eighth_circle</ins>](./files/eighth_circle)
+
+The file content seems like a mess here @@
+```
+$ cat eighth_circle
+D'`r#LK\[}{{EUUTet,r*qo'nmlk5ihVB0S!>w<<)9xqYonsrqj0hPlkdcb(`Hd]#a`_A@VzZY;Qu8NMRQJn1MLKJCg*)ED=a$:?>7[;:981w/4-,P*p(L,%*)"!~}CB"!~}_uzs9wpotsrqj0Qmfkdcba'H^]\[Z~^W?[TSRWPt7MLKo2NMFj-IHG@dD&<;@?>76Z{9276/.R21q/.-&J*j(!E%$d"y?`_{ts9qpon4lTjohg-eMihg`&^cb[!_X@VzZ<RWVOTSLpP2HMFEDhBAFE>=BA:^8=6;:981Uvu-,10/(Lm%*)(!~D1
+```
+After some searching, I found out that the challenge relate to Malbodge
+>Malbolge is a public domain esoteric programming language invented by Ben Olmstead in 1998, named after the <ins>eighth circle of hell</ins> in Dante's Inferno, the Malebolge
+
+You can easily find a [*Malbolge Interpreter online*](http://malbolge.doleczek.pl/) to view the content
+
+![image](https://user-images.githubusercontent.com/80664686/111242633-260ff980-8632-11eb-924b-21a1f295dc6e.png)
+
+## Car keys
+
+Description:
+```
+We found this note on someone's key chain! It reads... ygqa{6y980e0101e8qq361977eqe06508q3rt}? There was another key that was engraved with the word QWERTY, too...
+```
+
+Haven't got the solution yet but you still can read [here](https://github.com/xnomas/Nahamcon-2021-Writeups/tree/main/The_warmups)
