@@ -163,3 +163,9 @@ Description:
 A CONSTELLATIONS employee had his machine crash and he lost all his work. Thankfully IT managed to get a memory dump. Can you recover his work? 
 ```
 Notable words are `memory dump`
+
+The most common tool to analyze a memory dump is [volatility](https://github.com/volatilityfoundation/volatility/wiki/Volatility-Usage)
+
+>For all the command references go [here](https://github.com/volatilityfoundation/volatility/wiki/Command-Reference)</br>
+
+If you're using Kali Linux you can install it by `apt install volatility`
