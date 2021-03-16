@@ -169,3 +169,58 @@ The most common tool to analyze a memory dump is [volatility](https://github.com
 >For all the command references go [here](https://github.com/volatilityfoundation/volatility/wiki/Command-Reference)</br>
 
 If you're using Kali Linux you can install it by `apt install volatility`
+
+First of all, I need to know what is the profile of the image using `imageinfo`
+```
+$ volatility -f ./image.bin imageinfo
+Volatility Foundation Volatility Framework 2.6
+INFO    : volatility.debug    : Determining profile based on KDBG search...
+          Suggested Profile(s) : Win7SP1x86_23418, Win7SP0x86, Win7SP1x86_24000, Win7SP1x86
+                     AS Layer1 : IA32PagedMemoryPae (Kernel AS)
+                     AS Layer2 : FileAddressSpace (/mnt/f/CTF/nahamcon/forensics/typewriter/image.bin)
+                      PAE type : PAE
+                           DTB : 0x185000L
+                          KDBG : 0x8293bde8L
+          Number of Processors : 1
+     Image Type (Service Pack) : 1
+                KPCR for CPU 0 : 0x80b97000L
+             KUSER_SHARED_DATA : 0xffdf0000L
+           Image date and time : 2021-02-21 16:25:49 UTC+0000
+     Image local date and time : 2021-02-21 08:25:49 -0800
+```
+The suggested profile has some results but I'm just gonna stick to the first one
+
+After that, just scan for files in the image
+```
+$ volatility -f ./image.bin --profile=Win7SP1x86_23418 filescan
+Volatility Foundation Volatility Framework 2.6
+Offset(P)            #Ptr   #Hnd Access Name
+------------------ ------ ------ ------ ----
+0x0000000021f2ff80     15      0 RW-rwd \Device\HarddiskVolume1\$Mft
+0x0000000022093598      3      1 R--rwd \Device\HarddiskVolume1\ProgramData\Microsoft\Diagnosis\Sideload
+0x00000000222f60c0      1      0 RW-rwd \Device\HarddiskVolume1\$Directory
+0x00000000222f61c0     16      0 R--r-d \Device\HarddiskVolume1\Windows\System32\drivers\atapi.sys
+0x000000002248e160      4      0 R--r-d \Device\HarddiskVolume1\Windows\Fonts\msyi.ttf
+0x000000002248e2e0      8      0 R--r-- \Device\HarddiskVolume1\Windows\System32\KBDUS.DLL
+0x000000002248e7e0      5      0 R--r-d \Device\HarddiskVolume1\Windows\Fonts\taile.ttf
+...
+```
+The result is *a lot* 😐
+So lets just assume the flag might just gonna be in the *Desktop* or have the *.txt, docx, ...* extension. This time use `grep`
+```
+$ cat volatility/filescan.txt| grep -E "docx|txt"
+0x000000007e615f80      8      0 -W---- \Device\HarddiskVolume1\Users\IEUser\Desktop\~$NFIDENTIAL DOCUMENT.docx
+0x000000007e841f80      8      0 RW-r-- \Device\HarddiskVolume1\Users\IEUser\Desktop\CONFIDENTIAL DOCUMENT.docx
+0x000000007e8e9178      1      1 -W-rw- \Device\HarddiskVolume1\Users\IEUser\AppData\Local\Temp\FXSAPIDebugLogFile.txt
+0x000000007eb665b8      2      1 RW-r-- \Device\HarddiskVolume1\Users\IEUser\Desktop\CONFIDENTIAL DOCUMENT.docx
+```
+That `CONFIDENTIAL DOCUMENT.docx` looks kinda sus 🤔
+
+Now just find a way to download the file
+```
+$ volatility -f ./image.bin --profile=Win7SP1x86_23418 dumpfiles -Q 0x000000007e841f80 -D .
+Volatility Foundation Volatility Framework 2.6
+DataSectionObject 0x7e841f80   None   \Device\HarddiskVolume1\Users\IEUser\Desktop\CONFIDENTIAL DOCUMENT.docx
+SharedCacheMap 0x7e841f80   None   \Device\HarddiskVolume1\Users\IEUser\Desktop\CONFIDENTIAL DOCUMENT.docx
+```
+Finally just change the extension of the downloaded file to .docx and you're good to go
