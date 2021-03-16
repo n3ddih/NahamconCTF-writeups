@@ -106,7 +106,7 @@ You can do it manually or just use `sed` like below
 $ cat data.txt | sed 's/../:&/g2' > data.txt
 ```
 
-Then use the python script to parse the data from the link I left above
+Then use the python script from the external link I left above to parse the data
 ```
 usb_codes = {
     0x04:"aA", 0x05:"bB", 0x06:"cC", 0x07:"dD", 0x08:"eE", 0x09:"fF",
