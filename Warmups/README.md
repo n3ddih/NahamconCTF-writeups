@@ -1,13 +1,13 @@
 # Warmups
-Writeups for *warmups* category
+Writeups for *warmups* category 🥵
 
 ## Veebee
 File: [<ins>veebee.vbe</ins>](./files/veebee.vbe)
 
-If you use window just run the program
+If you use window just run the program 🤔
 
 ![image](https://user-images.githubusercontent.com/80664686/111112180-4ab49480-8592-11eb-945f-53de84f53ef0.png)
->I don't know how to run it on Linux though
+>I don't know how to run it on Linux though 😞
 
 ## Chicken Wings
 File: [<ins>chicken_wings</ins>](./files/chicken_wings)
@@ -118,7 +118,7 @@ The output image show the flag:
 
 ![shoelaces](https://user-images.githubusercontent.com/80664686/111125122-d97ddd00-85a3-11eb-9234-464f20039cf0.jpg)
 
-After seeing the *challenge name* and the *image* we can guess it's about `strings` command:
+After seeing the *challenge name* and the *image* we can guess it's about `strings` command :
 
 ```
 $ strings shoelaces.jpg | grep flag                                                                             
@@ -142,7 +142,7 @@ flag{fb5211b498afe87b1bd0db601117e16e}_
 ## Eight Circle
 File: [<ins>eighth_circle</ins>](./files/eighth_circle)
 
-The file content seems like a mess here @@
+The file content seems like a mess here 😵
 ```
 $ cat eighth_circle
 D'`r#LK\[}{{EUUTet,r*qo'nmlk5ihVB0S!>w<<)9xqYonsrqj0hPlkdcb(`Hd]#a`_A@VzZY;Qu8NMRQJn1MLKJCg*)ED=a$:?>7[;:981w/4-,P*p(L,%*)"!~}CB"!~}_uzs9wpotsrqj0Qmfkdcba'H^]\[Z~^W?[TSRWPt7MLKo2NMFj-IHG@dD&<;@?>76Z{9276/.R21q/.-&J*j(!E%$d"y?`_{ts9qpon4lTjohg-eMihg`&^cb[!_X@VzZ<RWVOTSLpP2HMFEDhBAFE>=BA:^8=6;:981Uvu-,10/(Lm%*)(!~D1
@@ -162,3 +162,5 @@ We found this note on someone's key chain! It reads... ygqa{6y980e0101e8qq361977
 ```
 
 Haven't got the solution yet but you still can read [here](https://github.com/xnomas/Nahamcon-2021-Writeups/tree/main/The_warmups)
+
+I know I'm sucks 😞
