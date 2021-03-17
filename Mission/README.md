@@ -62,4 +62,30 @@ Just use `git show`:
 ```
 $ git show 4c88ac1c56fe228267cf415c3ef87d7c3b8abd60
 ```
-Scroll down a little then we can see a list of people and a flag 😸
+Scroll down a little then we can see a list of people with a flag 😸
+
+## Gus
+
+At the end of the website there's a link to Github 
+
+![image](https://user-images.githubusercontent.com/80664686/111432069-217d3b00-872f-11eb-8e72-e54e78feaf77.png)
+
+There's nothing there but 1 person in people tab, which is the person we are looking for *Gus Rodry*
+
+Just tinkering around with the most recent update repo and you'll get the flag
+```
+# NOTE:
+# This flag submits for the `Gus` challenge you should see after solving `Meet The Team`, after you solve `Bionic`
+
+flag{84d5cc7e162895fa0a5834f1efdd0b32}
+```
+>Note that there's a *id_rsa* file, which might be used for remote ssh connection in the future
+
+## Hercules
+
+In the *followers* list of Gus there is a person name *HerculesScox*
+
+Tinkering around will give you the flag too 🤪
+> Note that there's a possible credential:</br>hercules:starstruckherc
+
+## Lyra
