@@ -34,9 +34,7 @@ $ mper.sh https://constellations.page/.git/ .
 ```
 At this point if you have visited `meet-the-team.html` file, there's a message said that:
 >...our team has decided to no longer publicize employee names and info
-Does that means it used to pubicize it? 🤔
-
-Then I could roll back the previous commit to view its content.
+Does that means it used to be pubicized? 🤔 And I should roll back the previous commit to view its content?
 
 Using `$ git log`
 ```
