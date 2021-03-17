@@ -30,11 +30,13 @@ Firstly, let's use `dumper` module
 >This tool can be used to download as much as possible from the found .git repository from webservers which do not have directory listing enabled.
 
 ```
-$ mper.sh https://constellations.page/.git/ .
+$ ./GitTools/dumper.sh https://constellations.page/.git/ .
 ```
 At this point if you have visited `meet-the-team.html` file, there's a message said that:
 >...our team has decided to no longer publicize employee names and info
 Does that means it used to be pubicized? 🤔 And I should roll back the previous commit to view its content?
+
+>Also if you still have problem understanding, learn Git. If you know it and still have problem, feel free to issue me 🤗
 
 Using `$ git log`
 ```
