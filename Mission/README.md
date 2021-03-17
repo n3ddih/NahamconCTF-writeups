@@ -1,4 +1,4 @@
-waaaaaaaaaaaaaaaaawwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwswww# Mission
+# Mission
 
 Writeups for category `Misson` 💥</br>
 Page: [constellations.page](https://constellations.page/)
