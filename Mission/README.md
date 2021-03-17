@@ -120,4 +120,22 @@ https://twitter.com/OrionMorra
 
 There's also a post that show the flag directly
 
->NOTE: a possible credentials: orion:start4love4life
+>NOTE: a possible credentials:</br>orion:start4love4life
+
+## Leo
+
+Searching on Twitter doesn't get anything (or 1 person but it's not right)
+
+Putting the full name `Leo Rison` to google and found an instagram account: https://www.instagram.com/_leorison/
+
+![image](https://user-images.githubusercontent.com/80664686/111496028-8017d880-8772-11eb-89cb-6fcc1e64c6ec.png)
+
+Every post here are just memes about [vim](https://en.wikipedia.org/wiki/Vim_(text_editor)). Except for 1 QR code, scanning the code we get:
+```
+flag{636db5f4f0e36908a4f1a4edc5b0676e}
+
+A password for Leo is constelleorising
+```
+There are our flag 🥂
+
+>NOTE: possible credential:</br>leo:constelleorising
