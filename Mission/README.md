@@ -79,13 +79,45 @@ Just tinkering around with the most recent update repo and you'll get the flag
 
 flag{84d5cc7e162895fa0a5834f1efdd0b32}
 ```
->Note that there's a *id_rsa* file, which might be used for remote ssh connection in the future
+>NOTE: there's a *id_rsa* file, which might be used for remote ssh connection in the future
 
 ## Hercules
 
 In the *followers* list of Gus there is a person name *HerculesScox*
 
 Tinkering around will give you the flag too 🤪
-> Note that there's a possible credential:</br>hercules:starstruckherc
+> NOTE: there's a possible credential:</br>hercules:starstruckherc
 
 ## Lyra
+
+From the previous challenge `Meet The Team` we know that full name of Lyra is *Lyra Patte*
+
+Searching the name on Twitter give us an account: https://twitter.com/LyraPatte
+
+![image](https://user-images.githubusercontent.com/80664686/111471745-cca3e980-875b-11eb-8043-9608ca8df47e.png)
+
+There's one specific post of the user that has a link to the *constellations* website
+
+https://constellations.page/constellations-documents/1/
+
+There's a number in the URL so we're gonna try to change it to see if it gives something else.
+
+Just some ordinary stuffs until it hits 5
+
+![image](https://user-images.githubusercontent.com/80664686/111473419-99faf080-875d-11eb-8f93-124a28846bd2.png)
+
+Seem like that's the flag of Lyra 🥳
+
+>NOTE: The list might be useful since its about default password. Better save it of later. Just make 2 files: one contains username and other has password.
+
+## Orion
+
+Just the same as Lyra, we can find the account of *Orion*
+
+https://twitter.com/OrionMorra
+
+![image](https://user-images.githubusercontent.com/80664686/111494798-5ca05e00-8771-11eb-8940-db9906f6bdea.png)
+
+There's also a post that show the flag directly
+
+>NOTE: a possible credentials: orion:start4love4life
