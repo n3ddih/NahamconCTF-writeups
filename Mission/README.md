@@ -106,6 +106,8 @@ Just some ordinary stuffs until it hits 5
 
 ![image](https://user-images.githubusercontent.com/80664686/111473419-99faf080-875d-11eb-8f93-124a28846bd2.png)
 
+>This action relate to a vulnerability called [IDOR](https://portswigger.net/web-security/access-control/idor)
+
 Seem like that's the flag of Lyra 🥳
 
 >NOTE: The list might be useful since its about default password. Better save it of later. Just make 2 files: one contains username and other has password.
