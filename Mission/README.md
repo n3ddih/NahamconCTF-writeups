@@ -1,7 +1,8 @@
 # Mission
 
 Writeups for category `Misson` 💥</br>
-Page: [constellations.page](https://constellations.page/)
+
+Challenge page: [constellations.page](https://constellations.page/)
 
 ## Bionic
 Locate the [robots.txt](https://en.wikipedia.org/wiki/Robots_exclusion_standard) file
