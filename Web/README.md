@@ -17,7 +17,7 @@ But no luck 😖
 
 Checking more on [List of HTTP Header](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)
 
-I found an interesting header `X-Forwarded-For`
+I found another interesting header `X-Forwarded-For`
 >A de facto standard for identifying the originating IP address of a client connecting to a web server through an HTTP proxy or load balancer.
 
 Okay let's try this 🤔
