@@ -12,6 +12,7 @@ The warning says that "this page is not **accessible externally**". So the purpo
 
 At first I was thinking about `Referer` header
 >This is the address of the previous web page from which a link to the currently requested page was followed.
+
 But no luck
 
 Checking more on [List of HTTP Header](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)
