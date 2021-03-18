@@ -1,7 +1,7 @@
 # WEB
 
 Writeups for Web Exploitation category.
-Notes: click "Start" button to get the URL of the challenges.
+>Notes: click "Start" button to get the URL of the challenges.
 
 ## Homeward Bound
 First notice to this warning when access to this page:
