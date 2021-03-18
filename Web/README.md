@@ -6,7 +6,7 @@ Notes: click "Start" button to get the URL of the challenges.
 ## Homeward Bound
 First notice to this warning when access to this page:
 
-![image](https://user-images.githubusercontent.com/61876488/111506964-c07c5400-877c-11eb-8753-e9251b08e1e2.png)
+![image](https://user-images.githubusercontent.com/80664686/111570513-9dcb5900-87d7-11eb-9ee4-41883dced903.png)
 
 The warning says that "this page is not **accessible externally**". So we will try to trick the web server that we **were accessing it internally**. First of all, I think about finding a header to add in this page 's request for this purpose. And finally I found an useful header [X-Forwarded-For](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For)! Let's turn on Burp Suite and exploit it!
 
