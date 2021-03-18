@@ -18,6 +18,4 @@ You can see nothing special in this page's request here! But when we add 'X-Forw
 
 You can access to this page internally and get the magic xD
 
-![image](https://user-images.githubusercontent.com/61876488/111510392-51086380-8780-11eb-9518-88c438af867d.png)
-
-
+![image](https://user-images.githubusercontent.com/80664686/111570482-89875c00-87d7-11eb-9469-2548823e94d4.png)
