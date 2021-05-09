@@ -1,5 +1,5 @@
 # NahamconCTF2021-writeups
-Writeups for my team <ins>antoinenguyen_09</ins> on **Nahamcon CTF 2021**
+Writeups of my team <ins>antoinenguyen_09</ins> on **Nahamcon CTF 2021**
 
 If you have problem just issue me I'm free to answer any question
 </br>
